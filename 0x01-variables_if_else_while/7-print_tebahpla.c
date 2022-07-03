@@ -5,17 +5,15 @@
  *
  * Return: Always 0.
  */
-
 int main(void)
-	
 {
-	char l;
+	char letter;
 
-	for (l = 'z'; l >= 'a'; l--)
-		
-	putchar(l);
+	for (letter = 'z'; letter >= 'a'; letter--)
+		putchar(letter);
 
 	putchar('\n');
 
 	return (0);
 }
+
