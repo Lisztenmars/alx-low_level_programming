@@ -1,14 +1,14 @@
-include "main.h"
-	
+#include "main.h"
+
 /**
  * main - main function .
  *
  * Return: 0
  */
-	
+
 int main(void)
 {
-	char h[] =  "_putchar";
+	char h[] = "_putchar";
 	int s = sizeof(h);
 	int i;
 
