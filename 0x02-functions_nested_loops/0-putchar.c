@@ -8,12 +8,16 @@
 
 int main(void)
 {
-	char h[] = "_putchar ";
+	char h[] = "_putchar";
+	int s = sizeof(h);
+	int i;
 
-int i;
-char hol[9] = "_putchar";
-for (i = 0; i <= 8; i++)
-_putchar(hol[i]);
-_putchar('\n');
-return (0);
+	for (i = 0; i < s; i++)
+	{
+		_putchar(h[i]);
+
+	}
+
+	_putchar('\n');
+	return (0);
 }
