@@ -8,7 +8,7 @@ include "main.h"
 	
 int main(void)
 {
-	char h[] ="_putchar";
+	char h[] = "_putchar";
 	int s = sizeof(h);
 	int i;
 
