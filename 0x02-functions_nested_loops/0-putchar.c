@@ -9,15 +9,11 @@
 int main(void)
 {
 	char h[] = "_putchar ";
-	int s = sizeof(h);
-	int i;
 
-	for (i = 0; i < s; i++)
-	{
-		_putchar(h[i]);
-
-	}
-
-	_putchar('\n');
-	return (0);
+int i;
+char hol[9] = "_putchar";
+for (i = 0; i <= 8; i++)
+_putchar(hol[i]);
+_putchar('\n');
+return (0);
 }
