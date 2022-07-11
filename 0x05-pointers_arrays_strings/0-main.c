@@ -2,13 +2,14 @@
  #include <stdio.h> 
   
  /** 
-  * main - check the code for Holberton School students. 
+  * main - check the code for Alx SE students. 
   * 
   * Return: Always 0. 
   */ 
  int main(void) 
  { 
          int n; 
+
   
          n = 402; 
          printf("n=%d\n", n); 
