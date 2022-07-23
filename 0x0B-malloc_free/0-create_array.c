@@ -7,6 +7,7 @@
  * @size: the size of the array
  * @c: string to it insite of new array
  *
+ * Return: poiner to an array
  */
 char *create_array(unsigned int size, char c)
 {
@@ -16,7 +17,7 @@ char *create_array(unsigned int size, char c)
 	if (size == 0)
 		return (NULL);
 
-	p = (char *) malloc (sizeof(char) * size);
+	p = (char *) malloc(sizeof(char) * size);
 
 	if (p == NULL)
 		return (0);
