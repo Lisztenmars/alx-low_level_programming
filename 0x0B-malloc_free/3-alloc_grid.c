@@ -3,41 +3,40 @@
 
 /**
  * alloc_grid - returns a pointer to a 2 dimensional array of integers.
- * @width: int size of width
- * @height: int size of height
+ * @width: int
+ * @height: int
+ *
  * Return: Null on failure
  */
 int **alloc_grid(int width, int height)
-
+{
 	int **tab, j, k;
 	
 	tab = malloc(sizeof(*tab) * height);
-
-if (width <= 0 || height <= 0 || tab == 0)
 	
-	return (NULL);
-{
-
-	for (j = 0; j < height; j++)
+	if (width <= 0 || height <= 0 || tab == 0)
+		
+		return (NULL);
+	else
 	
 	{
-		tab[j] = malloc(sizeof(**tab) * width);
-		
-		if (tab[j] == 0)
+		for (j = 0; j < height; j++)
 		{
-			while (j--)
+			tab[j] = malloc(sizeof(**tab) * width);
+			
+			if (tab[j] == 0)
+			{
+				while (j--)
+					
+					free(tab[j]);
+				free(tab);
 				
-				free(tab[j]);
-			free(tab);
-			
-			return (NULL);
-		}
-		
-		for (k = 0; k < width; k++)
-			
-			tab[j][k] = 0;
-	}
-	
-	return (tab);
+				return (NULL);
+				{
+					for (k = 0; k < width; k++)
+						tab[j][k] = 0;
+				}
+				
+				return (tab);
 
-}
+			}
